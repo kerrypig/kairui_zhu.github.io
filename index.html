@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片背景 + 下雪效果</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 语言切换框 -->
+    <div class="language-switch">
+        <div class="switch-option active" id="switch-cn">CN</div>
+        <div class="switch-option" id="switch-en">EN</div>
+    </div>
+
+    <!-- 首页内容 -->
+    <div class="content" id="home">
+        <h1 id="title">KerryPig</h1>
+        <p id="description">这是一个带有图片背景和下雪特效的网页。</p>
+        <button id="learnMoreButton">了解更多</button>
+        
+        <!-- 向下箭头 -->
+        <div class="arrow" id="scrollArrow">⬇</div>
+    </div>
+
+    <!-- About Me 页面 -->
+    <!-- About Me 页面 -->
+    <section class="about-me" id="about-me">
+        <h2 id="aboutTitle">关于我</h2>
+        <!-- 基本资料框 -->
+        <div class="basic_info_card" id="basic_info_card">
+            <p><strong>本科:</strong> 多伦多大学 (2027届)</p>
+            <p><strong>定位:</strong> 多伦多, 安大略省, 加拿大</p>
+            <p><strong>专业:</strong> 统计学, 应用数学, 计算机科学</p>
+            <p><strong>MBTI:</strong> ENTP</p>
+        </div>
+        
+        <!-- 项目经历框 -->
+        <div class="project_card" id="project_card">
+            <p><strong>项目经历:</strong></p>
+
+        </div>
+        <!-- 简历按钮卡片 -->
+        <div class="resume-card">
+            <button id="resumeButton">查看我的简历</button>
+        </div>
+    </section>
+
+    <!-- 最后一页：联系方式 -->
+    <section id="contact" class="contact-page">
+        <h2>Contact Me</h2>
+
+        <!-- 联系表单 -->
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- 联系方式标签 -->
+        <div class="contact-tags">
+            <div class="tag" data-copy="kairui.zhu@mail.utoronto.ca" onclick="copyToClipboard(this)">📧 Email</div>
+            <div class="tag" data-copy="+86 18676519577" onclick="copyToClipboard(this)">📱 Phone</div>
+            <a href="https://github.com/kerrypig" target="_blank" class="tag">🌟 GitHub</a>
+            <a href="https://www.instagram.com/zhu.kairui/" target="_blank" class="tag">📸 Instagram</a>
+        </div>
+    </section>
+
+    <!-- 粒子特效画布 -->
+    <canvas id="snowCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
